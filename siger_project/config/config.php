@@ -1,0 +1,1 @@
+# Constantes (URL base, rutas de img)
