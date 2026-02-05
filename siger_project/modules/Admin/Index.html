@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGER - Panel Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>👨‍💼 Panel Administrativo SIGER</h1>
+            <nav>
+                <a href="users.html">👥 Usuarios</a>
+                <a href="inventory.html">📦 Inventario</a>
+                <a href="#">📊 Reportes</a>
+                <a href="#">🚪 Salir</a>
+            </nav>
+        </header>
+        
+        <main class="admin-dashboard">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Pedidos Hoy</h3>
+                    <p class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Reservas Activas</h3>
+                    <p class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Ingresos Hoy</h3>
+                    <p class="stat-number">RD$ 0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Productos Bajos</h3>
+                    <p class="stat-number warning">0</p>
+                </div>
+            </div>
+            
+            <section class="quick-actions">
+                <h2>Acciones Rápidas</h2>
+                <button onclick="location.href='users.html'">➕ Añadir Usuario</button>
+                <button onclick="location.href='inventory.html'">🍔 Añadir Producto</button>
+                <button>📅 Ver Reservas</button>
+            </section>
+        </main>
+        
+        <script src="admin.js"></script>
+    </div>
+</body>
+</html>
