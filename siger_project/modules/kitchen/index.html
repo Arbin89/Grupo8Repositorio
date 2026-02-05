@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGER - Vista Cocina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="kitchen-mode">
+    <div class="kitchen-container">
+        <header class="kitchen-header">
+            <h1>👨‍🍳 Vista Cocina SIGER</h1>
+            <div class="status-badges">
+                <span class="badge recibido">📥 Recibidos: <span id="count-recibido">0</span></span>
+                <span class="badge preparando">🍳 Preparando: <span id="count-preparando">0</span></span>
+                <span class="badge listo">✅ Listos: <span id="count-listo">0</span></span>
+                <button onclick="actualizarPedidos()" class="refresh-btn">🔄 Actualizar</button>
+            </div>
+        </header>
+        
+        <main class="kitchen-main">
+            <div class="pedidos-columns">
+                <div class="pedidos-col" id="col-recibidos">
+                    <h2>📥 Pedidos Recibidos</h2>
+                    <div id="lista-recibidos" class="pedidos-lista">
+                        <!-- Pedidos recibidos aparecen aquí -->
+                    </div>
+                </div>
+                
+                <div class="pedidos-col" id="col-preparando">
+                    <h2>🍳 En Preparación</h2>
+                    <div id="lista-preparando" class="pedidos-lista">
+                        <!-- Pedidos en preparación aparecen aquí -->
+                    </div>
+                </div>
+                
+                <div class="pedidos-col" id="col-listos">
+                    <h2>✅ Listos para Servir</h2>
+                    <div id="lista-listos" class="pedidos-lista">
+                        <!-- Pedidos listos aparecen aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="kitchen-footer">
+            <p>Sistema actualizado en tiempo real | Última actualización: <span id="last-update">--:--</span></p>
+        </footer>
+    </div>
+    
+    <script src="monitor.js"></script>
+</body>
+</html>
