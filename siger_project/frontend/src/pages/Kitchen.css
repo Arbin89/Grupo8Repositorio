@@ -1,0 +1,132 @@
+.kitchen-page {
+  background: #1a1a1a;
+  min-height: calc(100vh - 100px);
+  color: white;
+  padding: 2rem;
+}
+
+.kitchen-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #333;
+}
+
+.kitchen-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.no-orders {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+}
+
+.no-orders h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.order-card {
+  background: white;
+  color: #333;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.order-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.table-number {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-time {
+  text-align: right;
+}
+
+.order-time p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.delayed-badge {
+  background: #dc3545;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.order-items {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.order-items p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.order-actions {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.order-actions .btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-info {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.order-actions .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-status {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 2px solid #e0e0e0;
+  font-weight: bold;
+}
