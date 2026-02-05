@@ -1,0 +1,14 @@
+{
+  "name": "siger-root",
+  "version": "2.0.0",
+  "description": "SIGER - Sistema de Gestión de Restaurante",
+  "scripts": {
+    "dev": "cd siger_project/frontend && npm run dev",
+    "install": "cd siger_project/frontend && npm install",
+    "build": "cd siger_project/frontend && npm run build",
+    "preview": "cd siger_project/frontend && npm run preview"
+  },
+  "keywords": ["restaurant", "pos", "react", "php"],
+  "author": "Grupo 8",
+  "license": "MIT"
+}
