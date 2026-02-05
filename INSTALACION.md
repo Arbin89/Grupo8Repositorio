@@ -40,16 +40,23 @@ C:\xampp\htdocs\siger_project
 
 ### 4. Instalar Dependencias React
 ```bash
-# Abrir PowerShell o CMD en:
-cd C:\xampp\htdocs\siger_project\frontend
+# Opción A: Desde la raíz del proyecto (más fácil)
+cd C:\xampp\htdocs\siger_project
+npm run install
 
-# Instalar paquetes NPM (tarda 1-2 minutos)
+# Opción B: Desde la carpeta frontend
+cd C:\xampp\htdocs\siger_project\frontend
 npm install
 ```
 
 ### 5. Iniciar el Frontend React
 ```bash
-# En la misma carpeta frontend/
+# Opción A: Desde la raíz del proyecto (más fácil)
+cd C:\xampp\htdocs\siger_project
+npm run dev
+
+# Opción B: Desde la carpeta frontend
+cd C:\xampp\htdocs\siger_project\frontend
 npm run dev
 ```
 
