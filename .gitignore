@@ -1,0 +1,47 @@
+# Archivos de configuración local
+config/local.php
+
+# Carpeta de uploads
+api/uploads/products/*
+!api/uploads/products/.gitkeep
+
+# Logs
+*.log
+error_log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporales
+*.tmp
+*.temp
+*.cache
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Composer (si se usa)
+vendor/
+composer.lock
+
+# Node modules y React
+node_modules/
+package-lock.json
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.env
+.env.local
+
+# Base de datos local
+*.sql.backup
+dump.sql
